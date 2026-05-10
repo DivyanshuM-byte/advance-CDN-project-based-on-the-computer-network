@@ -16,8 +16,8 @@ const Auth = ({ onLogin }) => {
     <div className="auth-container">
       <div className="auth-card">
         <div style={{ marginBottom: '30px' }}>
-          <h2 style={{ fontSize: '1.8rem', color: '#fff' }}>Velocity Edge Simulator</h2>
-          <p style={{ color: '#9ca3af', fontSize: '0.9rem' }}>Authenticate to access edge configuration</p>
+          <h2 style={{ fontSize: '1.8rem', color: 'var(--text-main)' }}>Velocity Edge Simulator</h2>
+          <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>Authenticate to access edge configuration</p>
         </div>
 
         <form onSubmit={handleLogin}>

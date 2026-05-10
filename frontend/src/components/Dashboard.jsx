@@ -246,7 +246,12 @@ const Dashboard = ({ onLogout }) => {
             </div>
 
             <div className="media-preview-box">
-               {loading && <div className="loading-overlay">Requesting Content...</div>}
+               {loading && (
+                 <div className="loading-overlay">
+                   <div className="spinner"></div>
+                   <span>Requesting Content...</span>
+                 </div>
+               )}
                
                {!loading && currentMedia && assetType !== 'video' && (
                  <img src={currentMedia} alt="Rendered Preview" />
