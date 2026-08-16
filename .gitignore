@@ -3,4 +3,7 @@ dist/
 .DS_Store
 *.log
 .env
-cache/
+.env.local
+# Ignore runtime cache data directories (NOT backend/cache/ source code)
+**/cache-data/
+*.cache
